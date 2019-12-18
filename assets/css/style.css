@@ -1,0 +1,33 @@
+/* tipografias */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/* estilos generales */
+body{
+    overflow-x: hidden;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-index{
+    background: radial-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)) ,url('../../assets/img/banner-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-login{
+    background: radial-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)) ,url('../../assets/img/banner-login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* estilos responsive */
+
