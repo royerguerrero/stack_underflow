@@ -2,6 +2,7 @@
 
 session_start();
 
+
 $controller = isset($_GET['controller']) ? $_GET['controller'] : 'index' ;
 $method = isset($_GET['method']) ? $_GET['method'] : 'index' ;
 

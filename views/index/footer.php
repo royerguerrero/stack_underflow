@@ -1,6 +1,6 @@
 <footer>
         <div class="w-100 p-3 d-flex justify-content-center">
-            <p class="m-auto">Desarollado por Royer Guerrero</p>
+            <p class="m-auto">Desarollado por Royer Guerrero 👋</p>
         </div>
     </footer>
 

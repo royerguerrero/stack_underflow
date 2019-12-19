@@ -21,7 +21,7 @@
                             <label class="custom-control-label" for="recordar">Recordar</label>
                         </div>
                     </div>
-                        <button type="submit" class="btn btn-warning">Ingresar</button>
+                        <button type="submit" class="btn btn-warning">👉 Ingresar</button>
                 </form>
             </div>
         </div>
