@@ -7,11 +7,11 @@
             <div class="w-75">
                 <h1 class="oswald text-uppercase h3">Ingresa a <span class="text-warning  font-weight-bold">nuestra
                         comunidad</span></h1>
-                <p>Ingresa para que puedas realizar preguntas y participar en la comunidad de stackUnderflow &copy;</p>
+                <p>Ingresa para que puedas realizar preguntas y participar en la comunidad de stackunderflow</p>
                 <form action="?controller=seguridad&method=sing_in" method="post" class="w-75">
                     <label for="nickname">Nickname</label>
                     <input type="text" name="nickname" id="nickname" placeholder="joedoe09" class="form-control">
-                    <div class="form-group">
+                    <div class="form-group"> 
                         <label for="pwd">Contraseña</label>
                         <input type="text" name="pwd" id="pwd" placeholder="****************" class="form-control">
                     </div>
@@ -25,6 +25,6 @@
                 </form>
             </div>
         </div>
-        </div>
+        </div> 
     </section>
 </main>

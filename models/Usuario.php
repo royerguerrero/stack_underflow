@@ -8,8 +8,8 @@ class Usuario extends Database{
             $result = parent::conectar() -> prepare("SELECT email, nickname FROM usuarios WHERE email = ? AND nickname = ?");
             $result->bindParam(1, $email, PDO::PARAM_STR);
             $result->bindParam(2, $nickname, PDO::PARAM_STR);
-
-            return $result->fetchAll();
+            $result->execute();
+            return $result->fetch();
         }catch (Exception $e){
             die($e->getMessage());
         }
@@ -23,6 +23,8 @@ class Usuario extends Database{
             $result->bindParam(3, $datos['pwa'], PDO::PARAM_STR);
             return $result->execute();
         }catch (Exception $e){
+            $_SESSION['flash-msm'] = 'El usuario o el correo ya esta en uso';
+            header('Location: ?method=sing_up');
             die("Error al registar el usuario " . $e->getMessage());
         }
     }

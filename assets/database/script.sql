@@ -30,7 +30,8 @@ CREATE TABLE usuarios(
     rol_id int(11) not null,
     estado_id int(11) not null,
     CONSTRAINT pk_usuario PRIMARY KEY(id),
-    CONSTRAINT uq_usuario_email UNIQUE (id),
+    CONSTRAINT uq_usuario_email UNIQUE (email),
+    CONSTRAINT uq_usuario_nickname UNIQUE (nickname),
     CONSTRAINT fk_usuario_rol FOREIGN KEY (rol_id) REFERENCES roles(id),
     CONSTRAINT fk_usuario_estado FOREIGN KEY (estado_id) REFERENCES estados(id)
 )ENGINE=InnoDB;
