@@ -7,7 +7,7 @@ class usuarioController extends Usuario{
         Seguridad::verificarUsuario();
     }
 
-    public function registrar(){ 
+    public function registerUser(){ 
 
         if(isset($_POST)){
             $data = array();
@@ -54,6 +54,19 @@ class usuarioController extends Usuario{
 
 
          header('Location: ?method=sing_up');
+    }
+
+    public function deleteAccount(){
+        if(isset($_SESSION['usuario'])){
+            $borrar = parent::borrarUsuario($_SESSION['usuario']);
+            if($borrar){
+                header('Location: ?controller=index');
+            }else{
+                header('Location: ?controller=usuario&method=dashboard');
+            }
+        }else{
+            header('Location: ?controller=usuario&method=dashboard');
+        }
     }
 
     public function dashboard(){

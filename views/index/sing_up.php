@@ -10,7 +10,7 @@
                 <p>Registrate para que puedas realizar preguntas y participar en la comunidad de stackUnderflow &copy;
                 </p>
                 <?php if(isset($_SESSION['flash-msm'])): ?>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <strong>😒 Upss!</strong> <?= $_SESSION['flash-msm'] ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -24,7 +24,7 @@
                     </button>
                 </div>
                 <?php endif; ?>
-                <form action="?controller=usuario&method=registrar" method="post" class="w-75">
+                <form action="?controller=usuario&method=registerUser" method="post" class="w-75">
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="text" class="form-control" name="email" id="email"

@@ -28,4 +28,21 @@ class Usuario extends Database{
             die("Error al registar el usuario " . $e->getMessage());
         }
     }
+
+    public function borrarUsuario($id){
+        try{
+            if(isset($id)){
+                $result = parent::conectar() -> prepare("UPDATE usuarios SET estado_id = 2 WHERE id = ?");
+                $result->bindParam(1, $id, PDO::PARAM_INT);
+                return $result->execute();
+                
+            }else{
+                header('Location: ?controller=index');
+            }
+        }catch (Exception $e){
+            die($e->getMessage());
+        }
+        
+    }
+
 }

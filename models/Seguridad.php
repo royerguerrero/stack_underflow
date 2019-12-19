@@ -17,8 +17,9 @@ class Seguridad extends Database{
         
         if(!isset($_SESSION['usuario'])){
             header('Location: ?method=sing_in');
-        }else if($_SESSION['usuario']->estado_id == 1){
-            $_SESSION['flash-msm-in'] = 'El usuario esta inactivo, comunuquese con su administrador';              
+        }else if($_SESSION['usuario']->estado_id == 2){
+            $_SESSION['flash-msm-in'] = 'El usuario esta inactivo, comuniquese con su administrador';             
+            header('Location: ?method=sing_in');
         }
     }
 

@@ -27,7 +27,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">My Profile</a>
-                        <a class="dropdown-item text-danger" href="#">Delete account</a>
+                        <a class="dropdown-item text-danger" href="?controller=usuario&method=deleteAccount(<?= $_SESSION['usuario']->id ?>)">Delete account</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="?controller=seguridad&method=logout">Logout</a>
                     </div>
