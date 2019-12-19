@@ -5,10 +5,10 @@
         </div>
         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center banner">
             <div class="w-75">
-                <h1 class="oswald text-uppercase h3">Ingresa a la <span class="text-warning  font-weight-bold">nuestra
+                <h1 class="oswald text-uppercase h3">Ingresa a <span class="text-warning  font-weight-bold">nuestra
                         comunidad</span></h1>
                 <p>Ingresa para que puedas realizar preguntas y participar en la comunidad de stackUnderflow &copy;</p>
-                <form action="" method="post" class="w-75">
+                <form action="?controller=seguridad&method=sing_in" method="post" class="w-75">
                     <label for="nickname">Nickname</label>
                     <input type="text" name="nickname" id="nickname" placeholder="joedoe09" class="form-control">
                     <div class="form-group">

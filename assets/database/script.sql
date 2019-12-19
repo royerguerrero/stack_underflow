@@ -26,6 +26,7 @@ CREATE TABLE usuarios(
     nickname varchar(50) not null,
     password varchar(100) not null,
     bio MEDIUMTEXT,
+    fecha date not null,
     rol_id int(11) not null,
     estado_id int(11) not null,
     CONSTRAINT pk_usuario PRIMARY KEY(id),
@@ -51,6 +52,7 @@ CREATE TABLE entradas(
     contenido MEDIUMTEXT not null,
     num_respuestas int(11),
     num_vistas int(11),
+    fecha date not null,
     respuestas_id int(11) not null,
     categoria_id int(11) not null,
     usuario_id int(11) not null,
@@ -64,3 +66,18 @@ CREATE TABLE entradas(
 )ENGINE=InnoDB;
 
 ALTER TABLE entradas ADD CONSTRAINT fk_entrada_respuesta FOREIGN KEY (respuestas_id) REFERENCES entradas(id);
+
+-- registro de roles
+
+INSERT INTO roles VALUES (null, 'Administrador'); 
+INSERT INTO roles VALUES (null, 'Usuario');
+
+-- registro de tipos de entradas
+
+INSERT INTO tipos_de_entradas VALUES (null, "Pregunta");
+INSERT INTO tipos_de_entradas VALUES (null, "Respuesta");
+
+-- registro de los estados
+
+INSERT INTO estados VALUES (null, "Activo");
+INSERT INTO estados VALUES (null, "Inactivo");

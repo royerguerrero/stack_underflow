@@ -25,6 +25,13 @@ body{
     background-position: center;
 }
 
+.banner-register{
+    background: radial-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)) ,url('../../assets/img/banner-singup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
 .oswald{
     font-family: 'Oswald', sans-serif;
 }
