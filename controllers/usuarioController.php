@@ -2,6 +2,11 @@
 
 class usuarioController extends Usuario{
 
+
+    public function __construct(){
+        Seguridad::verificarUsuario();
+    }
+
     public function registrar(){ 
 
         if(isset($_POST)){
@@ -49,5 +54,12 @@ class usuarioController extends Usuario{
 
 
          header('Location: ?method=sing_up');
+    }
+
+    public function dashboard(){
+        require_once 'views/index/header.php';
+        require_once 'views/users/navbar.php';
+        require_once 'views/users/index.php';
+        require_once 'views/index/footer.php';
     }
 }

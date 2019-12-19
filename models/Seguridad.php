@@ -12,4 +12,14 @@ class Seguridad extends Database{
             die($e->getMessage());
         }
     }
+
+    public function verificarUsuario(){
+        
+        if(!isset($_SESSION['usuario'])){
+            header('Location: ?method=sing_in');
+        }else if($_SESSION['usuario']->estado_id == 1){
+            $_SESSION['flash-msm-in'] = 'El usuario esta inactivo, comunuquese con su administrador';              
+        }
+    }
+
 } 

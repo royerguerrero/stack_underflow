@@ -10,10 +10,10 @@
                 <p>Ingresa para que puedas realizar preguntas y participar en la comunidad de stackunderflow</p>
                 <form action="?controller=seguridad&method=sing_in" method="post" class="w-75">
                     <label for="nickname">Nickname</label>
-                    <input type="text" name="nickname" id="nickname" placeholder="joedoe09" class="form-control">
+                    <input type="text" name="nickname" id="nickname" placeholder="joedoe09" class="form-control" required>
                     <div class="form-group"> 
-                        <label for="pwd">Contraseña</label>
-                        <input type="text" name="pwd" id="pwd" placeholder="****************" class="form-control">
+                        <label for="pwa">Contraseña</label>
+                        <input type="password" name="pwa" id="pwa" placeholder="****************" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-checkbox">
