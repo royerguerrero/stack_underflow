@@ -54,7 +54,7 @@ CREATE TABLE entradas(
     num_respuestas int(11),
     num_vistas int(11),
     fecha date not null,
-    respuestas_id int(11) not null,
+    respuestas_id int(11),
     categoria_id int(11) not null,
     usuario_id int(11) not null,
     tipo_de_entrada_id int(11) not null,
@@ -82,3 +82,25 @@ INSERT INTO tipos_de_entradas VALUES (null, "Respuesta");
 
 INSERT INTO estados VALUES (null, "Activo");
 INSERT INTO estados VALUES (null, "Inactivo");
+
+-- registro de las categorias
+INSERT INTO categorias VALUES (null, "HTML5" 1, 1);
+INSERT INTO categorias VALUES (null, "CSS3" 1, 1);
+INSERT INTO categorias VALUES (null, "PHP" 1, 1);
+INSERT INTO categorias VALUES (null, "JAVA" 1, 1);
+INSERT INTO categorias VALUES (null, "JAVASCRIPT" 1, 1);
+INSERT INTO categorias VALUES (null, "C++" 1, 1);
+INSERT INTO categorias VALUES (null, "RESPONSIVE DESING" 1, 1);
+INSERT INTO categorias VALUES (null, "ASSEMBLER" 1, 1);
+INSERT INTO categorias VALUES (null, "LARAVEL" 1, 1);
+INSERT INTO categorias VALUES (null, "DJANGO" 1, 1);
+INSERT INTO categorias VALUES (null, "ARDUINO" 1, 1);
+INSERT INTO categorias VALUES (null, "PYTHON" 1, 1);
+INSERT INTO categorias VALUES (null, "RASBERRY PI" 1, 1);
+INSERT INTO categorias VALUES (null, "DRONES" 1, 1);
+
+-- creacion de entradas 
+INSERT INTO entradas VALUES (null, "Error en el div", "Hola amigos tengo un error en el div llevo dias con esto", 0, 0, CURDATE(),  null, 1, 1, 1, 1);
+INSERT INTO entradas VALUES (null, "Error en el text-aling", "Hola amigos tengo un error en el text-aling llevo dias con esto", 0, 0, CURDATE(),  null, 2, 1, 1, 1);
+INSERT INTO entradas VALUES (null, "Error en el clase", "Hola amigos tengo un error en el clase llevo dias con esto", 0, 0, CURDATE(),  null, 3, 1, 1, 1);
+INSERT INTO entradas VALUES (null, "Error en el sistem.out.print", "Hola amigos tengo un error en el sistem.out.print llevo dias con esto", 0, 0, CURDATE(),  null, 4, 1, 1, 1);

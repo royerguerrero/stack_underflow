@@ -18,7 +18,7 @@
                         <a class="nav-link" href="#">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?controller=categoria">Questions</a>
+                        <a class="nav-link" href="?controller=entrada">Questions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary text-white mx-md-2" href="?method=sing_in">Sing In</a>

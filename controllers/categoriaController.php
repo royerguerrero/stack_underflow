@@ -9,7 +9,7 @@ class categoriaController extends Categoria{
     }
 
     public function getAllCategories(){
-        $categorias = (parent::obtenerTodasLasCategorias() == true) ? parent::obtenerTodasLasCategorias() : '🤷‍♀️ No hay categorias aun 🤦‍♀️';
+        $categorias = (count(parent::obtenerTodasLasCategorias()) > 0) ? parent::obtenerTodasLasCategorias() : '<span class="text-center">🤷‍♀️ No hay categorias aun 🤦‍♀️</span>';
         return $categorias;
     }
 }
